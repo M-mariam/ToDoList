@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+
+<!-- Title -->
+     <header class="container ">
+        <div class=" header-container py-3 ">
+            <h2 class="w-50 text-center text-light m-auto fs-2"><i class="fas fa-clipboard-check "></i> To-do List</h2>
+        </div>  
+    </header>
+
+<!-- inputs -->
+ <div class="container d-flex flex-column align-items-center ">
+   <div class="mb-3 w-50 ">
+          <label for="task-title" class="form-label fs-4 fw-bolder text-light">Title:</label>
+                <input id="task-title" type="text" class="form-control" 
+                    aria-label="Recipient's username" aria-describedby="button-additem">
+              </div>
+        <div class="mb-3 w-50  ">
+           <label for="task-description" class="form-label fs-4 fw-bolder text-light">Description:</label>
+                <input id="task-description" type="text" class="form-control"
+                    aria-label="Recipient's username" aria-describedby="button-additem">   
+        </div>
+         <div class="d-flex align-items-end my-btns">
+        <button id="add-btn"  class="btn btn-primary mb-3" type="button" >Add</button>
+        <button id="update-btn"  class="btn btn-primary mb-3 d-none" type="button">Update</button>
+    </div>
+        <div id="message" class="  text-danger text-center"></div>    
+ </div>
+    
+
+    <section>
+        <div class="container mt-2" id="data">
+            <div class="d-flex rounded rounded-2 justify-content-between mb-1 bg-primary py-2 px-3 align-items-center w-50 mx-auto">
+               <div>
+                <span class="text-capitalize">Play Football</span>
+               </div>
+                <div>
+                <button id="done" class="btn px-0 "> <i  class=" text-light fa-regular fa-circle-check"></i></button>
+                <button id="update" class="btn px-0"><i class=" text-light fa-regular fa-pen-to-square"></i></button>
+                <button id="delete" class="btn px-0 "><i class=" text-light fa-regular fa-trash-can"></i></button>
+                </div>  
+            </div>
+        </div>
+    </section> 
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

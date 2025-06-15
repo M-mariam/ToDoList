@@ -87,7 +87,7 @@ function displayTasks(): void {
 function clearInputs(): void {
   taskTitle.value = '';
   taskDescription.value = '';
-  messageEl.textContent = '';
+  // messageEl.textContent = '';
 }
 
 // Delete Task
